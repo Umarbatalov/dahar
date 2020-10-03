@@ -1,0 +1,27 @@
+---
+title: CPSC_223 Первый день
+date: 2020-06-06 18:29:23
+tags:
+---
+
+Начал курс йельского университета - [CPSC_223](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html)
+
+##Первый день:
+Что выучил в первый день изучения:
+
+1. Как запускать программу написанную на языке C.
+```shell script
+$ gcc -std=c18 -g3 my_program my_program.c 
+
+STANDART=-std=c18
+DEBUG=-g3
+``` 
+2. [Make](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#make).
+3. Режим дебаггинга [GNU Debugger](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#debugging).
+```shell script
+$ gdb ./my_program
+``` 
+4. Профилирование с помощью [Valgrind-а](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#valgrind). 
+```shell script
+$ valgrind -q --tool=memcheck --leak-check=yes ./my-program arg1 arg2 < test-input
+```
